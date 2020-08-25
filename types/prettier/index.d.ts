@@ -145,6 +145,11 @@ export interface RequiredOptions extends doc.printer.Options {
      * @default false
      */
     vueIndentScriptAndStyle: boolean;
+    /**
+     * Control whether Prettier formats quoted code embedded in the file..
+     * @default 'auto'
+     */
+    embeddedLanguageFormatting: 'auto' | 'off';
 }
 
 export interface ParserOptions extends RequiredOptions {
